@@ -13,6 +13,6 @@ export const navlinks = [
   },
   {
     label: 'Contato',
-    href: '/'
+    href: '/contato'
   },
 ]

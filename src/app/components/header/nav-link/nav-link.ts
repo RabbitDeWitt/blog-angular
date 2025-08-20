@@ -6,5 +6,8 @@ import { Component, Input } from '@angular/core';
   templateUrl: './nav-link.html',
 })
 export class NavLink {
-  @Input() navlink = ''
+  @Input() navlink = {
+    label: '',
+    href: ''
+  }
 }

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ICategory } from '../../../constants/category';
+import { Category } from '../../../constants/category';
 import { FileIcon, LucideAngularModule } from 'lucide-angular';
 
 
@@ -9,7 +9,7 @@ import { FileIcon, LucideAngularModule } from 'lucide-angular';
   templateUrl: './category-badge.html',
 })
 export class CategoryBadge {
-  @Input() category: ICategory = {
+  @Input() category: Category = {
     name: '',
     count: 0
   }

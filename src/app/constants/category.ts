@@ -1,12 +1,12 @@
 import { Code, Palette, Leaf, Smartphone, Globe, Camera, LucideIconData } from 'lucide-angular'
 
-export interface ICategory {
+export type Category = {
   name: string,
   icon?: LucideIconData,
   count: number
 }
 
-export const categories: ICategory[] = [
+export const categories: Category[] = [
   { name: "Tecnologia", icon: Code, count: 24 },
   { name: "Design", icon: Palette, count: 18 },
   { name: "Sustentabilidade", icon: Leaf, count: 12 },

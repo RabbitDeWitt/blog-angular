@@ -1,0 +1,70 @@
+<app-header></app-header>
+<main class="pt-20">
+
+  <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Sobre Nós</h1>
+      <p class="text-xl text-gray-600 leading-relaxed">
+        Compartilhando conhecimento, experiências e insights através de conteúdo de qualidade
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Nossa História</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Nascemos da paixão por compartilhar conhecimento e criar conexões através de conteúdo relevante. Nosso
+            blog é um espaço onde ideias ganham vida e experiências são transformadas em aprendizado.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Acreditamos que cada história tem o poder de inspirar, educar e transformar. Por isso, nos dedicamos a
+            criar conteúdo autêntico e de qualidade para nossa comunidade.
+          </p>
+        </div>
+        <div class="bg-gray-100 rounded-lg h-64 flex items-center justify-center">
+          <img src="https://placehold.co/400x300/lightblue/white" alt="Nossa equipe"
+            class="rounded-lg object-cover w-full h-full" />
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        @for (mission of missions; track mission.title) {
+        <mission-card [mission]="mission"></mission-card>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center mb-16">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">Nossa Equipe</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        @for (person of team; track person.name) {
+        <worker-card [worker]="person"></worker-card>
+        }
+      </div>
+
+
+    </div>
+  </section>
+
+  <div class="max-w-4xl mx-auto mb-20">
+    <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg p-8 text-center text-white">
+      <h2 class="text-2xl font-bold mb-4">Vamos Conversar</h2>
+      <p class="text-blue-100 mb-6">Tem alguma sugestão, dúvida ou quer colaborar conosco? Adoraríamos ouvir você!</p>
+      <button
+        class="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors cursor-pointer">
+        Entre em Contato
+      </button>
+    </div>
+  </div>
+
+
+
+
+</main>
+<app-footer></app-footer>

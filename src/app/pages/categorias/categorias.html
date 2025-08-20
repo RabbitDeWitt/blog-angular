@@ -1,0 +1,52 @@
+<app-header></app-header>
+<main class="pt-20">
+
+  <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Categorias</h1>
+      <p class="text-xl text-gray-600 leading-relaxed">
+        Explore nossos conteúdos organizados por temas. Encontre exatamente o que você está procurando.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        @for (category of categories; track category.name) {
+        <category-card [category]="category"></category-card>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Tags Populares</h2>
+      <div class="flex flex-wrap justify-center gap-3">
+
+        @for (tag of tags; track $index) {
+        <span
+          class="px-4 py-2 bg-white border border-gray-200 rounded-full text-gray-700 hover:border-blue-300 hover:text-blue-600 cursor-pointer transition-all">#{{tag}}</span>
+        }
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg p-8 text-center text-white">
+        <h2 class="text-2xl font-bold mb-4">Não encontrou o que procurava?</h2>
+        <p class="text-blue-100 mb-6">Sugerir um tópico ou categoria que gostaria de ver em nosso blog.</p>
+        <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors">
+          Enviar Sugestão
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+<app-footer></app-footer>

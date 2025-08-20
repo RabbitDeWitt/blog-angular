@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Category } from '../../../constants/category';
-import { FileIcon, LucideAngularModule } from 'lucide-angular';
+import { LucideAngularModule } from 'lucide-angular';
 
 
 @Component({
@@ -11,8 +11,7 @@ import { FileIcon, LucideAngularModule } from 'lucide-angular';
 export class CategoryBadge {
   @Input() category: Category = {
     name: '',
-    count: 0
+    count: 0,
+    description: ''
   }
-
-  readonly FileIcon = FileIcon
 }

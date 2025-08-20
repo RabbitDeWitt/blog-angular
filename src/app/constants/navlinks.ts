@@ -9,7 +9,7 @@ export const navlinks = [
   },
   {
     label: 'Categorias',
-    href: '/'
+    href: '/categorias'
   },
   {
     label: 'Contato',

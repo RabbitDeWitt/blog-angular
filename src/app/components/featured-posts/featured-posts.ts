@@ -6,7 +6,6 @@ import { FeaturedPostCard } from './featured-post-card/featured-post-card';
   selector: 'app-featured-posts',
   imports: [FeaturedPostCard],
   templateUrl: './featured-posts.html',
-  styleUrl: './featured-posts.css'
 })
 export class FeaturedPosts {
   posts = featuredPosts

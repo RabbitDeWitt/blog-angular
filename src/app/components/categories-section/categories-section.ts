@@ -6,7 +6,6 @@ import { CategoryBadge } from './category-badge/category-badge';
   selector: 'app-categories-section',
   imports: [CategoryBadge],
   templateUrl: './categories-section.html',
-  styleUrl: './categories-section.css'
 })
 export class CategoriesSection {
   categories = categories

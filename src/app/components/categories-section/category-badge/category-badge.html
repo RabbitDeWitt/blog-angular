@@ -1,9 +1,9 @@
 <div
-  class="flex items-center space-x-3 bg-white p-4 rounded-lg min-w-fit cursor-pointer hover:bg-blue-50 hover:text-blue-700 transition-colors shadow-sm">
+  class="flex items-center space-x-3 bg-white p-4 rounded-lg min-w-fit cursor-pointer hover:bg-accent hover:text-accent-foreground transition-colors shadow-sm group">
 
   <lucide-angular [img]='category.icon'></lucide-angular>
   <div>
     <h3 class="font-semibold">{{category.name}}</h3>
-    <p class="text-sm text-gray-500">{{category.count}}</p>
+    <p class="text-sm group-hover:text-white text-muted-foreground">{{category.count}}</p>
   </div>
 </div>

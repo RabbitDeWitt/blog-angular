@@ -7,7 +7,6 @@ import { FileIcon, LucideAngularModule } from 'lucide-angular';
   selector: 'category-badge',
   imports: [LucideAngularModule],
   templateUrl: './category-badge.html',
-  styleUrl: './category-badge.css'
 })
 export class CategoryBadge {
   @Input() category: ICategory = {

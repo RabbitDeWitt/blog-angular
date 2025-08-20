@@ -7,7 +7,6 @@ import { LucideAngularModule, Search } from "lucide-angular";
   selector: 'app-header',
   imports: [NavLink, LucideAngularModule],
   templateUrl: './header.html',
-  styleUrl: './header.css'
 })
 export class Header {
   links = navlinks

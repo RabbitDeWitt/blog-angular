@@ -5,7 +5,6 @@ import { IPost } from '../../../constants/posts';
   selector: 'featured-post-card',
   imports: [],
   templateUrl: './featured-post-card.html',
-  styleUrl: './featured-post-card.css'
 })
 export class FeaturedPostCard {
   @Input() post: IPost = {

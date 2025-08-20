@@ -13,7 +13,7 @@ export const featuredPosts: IPost[] = [
     title: "O Futuro da Inteligência Artificial",
     excerpt: "Explore como a IA está transformando nossa sociedade e o que esperar nos próximos anos.",
     category: "Tecnologia",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://placehold.co/300x200/lightgreen/white",
     readTime: "5 min",
   },
   {
@@ -21,7 +21,7 @@ export const featuredPosts: IPost[] = [
     title: "Design Minimalista: Menos é Mais",
     excerpt: "Descubra os princípios do design minimalista e como aplicá-los em seus projetos.",
     category: "Design",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://placehold.co/300x200/lightblue/white",
     readTime: "3 min",
   },
   {
@@ -29,7 +29,7 @@ export const featuredPosts: IPost[] = [
     title: "Sustentabilidade na Era Digital",
     excerpt: "Como a tecnologia pode contribuir para um mundo mais sustentável e ecológico.",
     category: "Sustentabilidade",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://placehold.co/300x200/pink/white",
     readTime: "7 min",
   },
 ]

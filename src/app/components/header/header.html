@@ -3,10 +3,12 @@
 
     <a href="/" class="text-2xl font-bold">Blog</a>
 
-    <nav class="hidden md:flex items-center space-x-6">
-      @for (link of links; track link.label) {
-      <nav-link [navlink]="link"></nav-link>
-      }
+    <nav>
+      <ul class="hidden md:flex items-center space-x-6">
+        @for (link of links; track link.label) {
+        <nav-link [navlink]="link"></nav-link>
+        }
+      </ul>
     </nav>
 
     <button

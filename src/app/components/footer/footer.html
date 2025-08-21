@@ -15,7 +15,7 @@
         <ul class="flex flex-col gap-2 text-gray-300">
           @for (option of menu.links; track option.title) {
           <li>
-            <!-- <a href="option.href" class="hover:text-accent transition-colors">{{option.title}}</a> -->
+            <a [routerLink]="option.href" class="hover:text-accent transition-colors">{{option.title}}</a>
           </li>
           }
         </ul>

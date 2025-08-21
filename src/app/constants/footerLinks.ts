@@ -11,19 +11,19 @@ export const footerLinks: footerLink[] = [
     category: 'Navegação',
     links: [
       {
-        href: '#',
+        href: '/',
         title: 'Home'
       },
       {
-        href: '#',
+        href: '/sobre',
         title: 'Sobre'
       },
       {
-        href: '#',
+        href: '/categorias',
         title: 'Categorias'
       },
       {
-        href: '#',
+        href: '/contato',
         title: 'Contato'
       },
     ]
